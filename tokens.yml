@@ -1,4 +1,5 @@
 D6 : "(Drupal 6) [https://www.drupal.org]"
 D7 : "(Drupal 7) [https://www.drupal.org]"
 D8 : "(Drupal 8) [https://www.drupal.org]"
-cm storage location: "```Some Location```
+cm storage location : "```Some Location```"
+autoload spec : "psr4"
