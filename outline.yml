@@ -1,1 +1,69 @@
-CMI Book Outline - Introduction   - Who am I - What came before CMI (variables table)   - Problems with Variables table (variable_get & variable_set)   - Why CMI is better   - Why is that better?     - Defined structure     - Configuration Variables have language settings     - Defaults are now set in the system - Enter Drupal 8 Configuration Management Initiative- History (http://groups.drupal.org/build-systems-change-management/cmi)- What is CMI  - format    - Yaml    - Drupal cmi yml    - File structure    - Subcategories  - What does Drupal do with yaml files- settings.php $conf to $settings  - What is settings.php and what does it do  - overriding settings.php before cmi    - Multiple configuration storage locations    - deployment issues  - overriding settings with $settings  - when to use $settings object- Writing a module that uses $conf object  - Anatomy of a configuration object    - Yaml Conventions    - Location      - Namespaces  - Simple $conf object  - Inspect some core conf objects    - Content types    - Vocabularies    - User    - Generic Entity and Bundle- Community modules- Drush- Features- Deployment strategies- Multilingual
+CMI Book Outline
+ - Introduction
+   - Who am I
+ - What came before CMI (variables table)
+   - Problems with Variables table (variable_get & variable_set)
+   - Why CMI is better
+   - Why is that better?
+     - Defined structure
+     - Configuration Variables have language settings
+     - Defaults are now set in the system
+ - Enter Drupal 8 Configuration Management Initiative
+- History (http://groups.drupal.org/build-systems-change-management/cmi)
+- What is CMI
+  - format
+    - Yaml
+    - Drupal cmi yml
+    - File structure
+    - Subcategories
+  - What does Drupal do with yaml files
+- settings.php $conf to $settings
+  - What is settings.php and what does it do
+  - overriding settings.php before cmi
+    - Multiple configuration storage locations
+    - deployment issues
+  - overriding settings with $settings
+  - when to use $settings object
+- Writing a module that uses $conf object
+  - Anatomy of a configuration object
+    - Yaml Conventions
+    - Location
+      - Namespaces
+  - Simple $conf object
+  - Inspect some core conf objects
+    - Content types
+    - Vocabularies
+    - User
+    - Generic Entity and Bundle
+- Community modules
+  - config_update
+  - config_tools
+  - config_readonly
+  - config_sync
+  - 
+- Drush
+  - DrupalConsole
+- Features
+- Multilingual
+- How Do I ...?
+  - Drush
+    - Find all config settings?
+    - Set a config setting?
+    - Export a config setting?
+    - Export a collection of config settings?
+    - Import config settings?
+  - Development
+    - Define a config entity
+    - Create a form for setting a config entity
+    - Package default config
+    - Package custom node/entity type
+    - Package a view
+    - Override base settings
+    - Theme stuff?
+  - Workflow
+    - Set custom active directories
+    - Set drupal to work from files rather than the database
+    - Package default settings in an install profile
+    - Export Config to code
+    - Import Config from code
+    - Move setting from Local to Dev to Test to Prod
