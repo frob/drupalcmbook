@@ -1,0 +1,21 @@
+{
+  "name": "drupalcmibook",
+  "version": "0.0.0",
+  "description": "\"This is a book about Drupal 8's configuration management system.\"",
+  "main": "build/html/index.html",
+  "scripts": {
+    "build": "npm run build-html",
+    "build-html": "pandoc -o build/html/index.html pages/*; pandoc -o build/html/apendix.html apendix/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frob/cmibook.git"
+  },
+  "author": "Frank Anderson <frobdfas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frob/cmibook/issues"
+  },
+  "homepage": "https://github.com/frob/cmibook#readme"
+}
