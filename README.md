@@ -26,3 +26,13 @@ The bones of the book are currently still being written. The technical aspects w
     - [ ] Export Config to code
     - [ ] Import Config from code
     - [ ] Move setting from Local to Dev to Test to Prod
+
+
+However, there are more things todo for the building of the book.
+ - [ ] Token replacement script
+ - [ ] Pardoc builder
+ - [ ] Pardoc to manuscripts builder for leanpub publication
+ - [ ] gh-pages branch for homepage
+ - Optional
+   - [ ] Travis script to auto build
+   
