@@ -1,4 +1,4 @@
-# What is CMI
+# What is CM
 
 As I said in the history chapter, CMI stands for Configuration Management Initiative. CMI was the project within the [D8] project to make configuration sane and standard for developers.
 
