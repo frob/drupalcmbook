@@ -1,6 +1,6 @@
- - Introduction
+ - 00 Introduction
    - Who am I
- - What came before CMI (variables table)
+ - 01 What came before CMI (variables table)
    - Problems with Variables table (variable_get & variable_set)
    - Why CMI is better
    - Why is that better?
@@ -8,22 +8,22 @@
      - Configuration Variables have language settings
      - Defaults are now set in the system
  - Enter Drupal 8 Configuration Management Initiative
-- History (http://groups.drupal.org/build-systems-change-management/cmi)
-- What is CMI
+- 02 History (http://groups.drupal.org/build-systems-change-management/cmi)
+- 03 What is CMI
   - format
     - Yaml
     - Drupal cmi yml
     - File structure
     - Subcategories
   - What does Drupal do with yaml files
-- settings.php $conf to $settings
+- 04 settings.php $conf to $settings
   - What is settings.php and what does it do
   - overriding settings.php before cmi
     - Multiple configuration storage locations
     - deployment issues
   - overriding settings with $settings
   - when to use $settings object
-- Writing a module that uses $conf object
+- 05 Writing a module that uses $conf object
   - Anatomy of a configuration object
     - Yaml Conventions
     - Location
@@ -34,23 +34,29 @@
     - Vocabularies
     - User
     - Generic Entity and Bundle
-- Community modules
+- 06 Community modules
   - config_update
   - config_tools
   - config_readonly
   - config_sync
   -
-- Drush
+- 07 Drush
   - DrupalConsole
-- Features
-- Multilingual
-- How Do I ...?
+- 08 Features
+- 09 Multilingual
+- 10 How Do I ...?
   - Drush
     - Find all config settings?
     - Set a config setting?
     - Export a config setting?
     - Export a collection of config settings?
     - Import config settings?
+  - DrupalConsole
+    - Find all config settings
+    - Set a config setting
+    - Export a config setting
+    - Export a collection of config settings
+    - Import config settings
   - Development
     - Define a config entity
     - Create a form for setting a config entity
