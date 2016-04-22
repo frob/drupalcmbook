@@ -12,9 +12,9 @@ There are two default Configuration file locations, in the module that they belo
 
 A core module, such as Contact, will store its default configuration settings in: ``` core/modules/contact/config/install/contact.settings.yml ```
 
-When the module has installed Drupal will copy the configruation to the database and to ``` sites/default/files/config_9RwHAqNH0ZhLwUsLUin_iKsp8IMZTSxwGefeBKH-XyBKmBnKzRZIDaOHQyuGrdABUFq3gy_riQ/staging ``` (assuming this is default and not a site spesific multisite configuration).
+When the module has installed Drupal will copy the configruation to the database and to ``` sites/default/files/config_9RwHAqNH0ZhLwUsLUin_iKsp8IMZTSxwGefeBKH-XyBKmBnKzRZIDaOHQyuGrdABUFq3gy_riQ/sync ``` (assuming this is default and not a site spesific multisite configuration).
 
-> Please note that the 9RwHAqNH0ZhLwUsLUin_iKsp8IMZTSxwGefeBKH-XyBKmBnKzRZIDaOHQyuGrdABUFq3gy_riQ is a unique hash for installed site. This is directory is stored as a hash to avoid conflicts.
+> Please note that the 9RwHAqNH0ZhLwUsLUin_iKsp8IMZTSxwGefeBKH-XyBKmBnKzRZIDaOHQyuGrdABUFq3gy_riQ is a unique hash for installed site. This is stored as a hash to avoid conflicts.
 
 > @todo: include note about active configuration settings override.
 
