@@ -53,7 +53,7 @@ hello:
 <dt>"Nesting things Array"</dt>
 <dd>
 ```yaml
-hello
+hello:
   term: definition
   example: here is a longer line
   another level
