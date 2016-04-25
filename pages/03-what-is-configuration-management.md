@@ -108,6 +108,8 @@ preview_mode: 1
 display_submitted: true
 ```
 
+>It is importent to remember that [D8] thas many yaml files and not all of them are considered configuration management. If you are familiar with info files from [D7] and early, they have all been switched over to yaml files. Also, many info hooks have been replaced, at least partially, with yaml files. Routes used to be implementations of hook_menu they are now yaml files.
+
 To get the human name we can call the ```get('name')``` method on it, to get the type we can call the ```get('type')```
 @TODO find out if there are magic methods for config objects.
 
