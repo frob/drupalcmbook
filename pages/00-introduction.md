@@ -25,6 +25,8 @@ This book will explore what the configuration management system is, how it was c
 - Tutorial
   This is the section with specific workflow based how tos.
 
+With this book having three sections that all cover the same thing there is going to be some repatetition, this is by design. Different people learn in different ways. I expect some to skip to the reference parts or only use the Tutorial section. In order for those parts to be complete, they will have to contain the same information.
+
 # About the book
 
 This book is also an open source project. I hope it will catch on and I will get further contribution to the book from the Drupal community. I am selling this book, both in print and ebook versions. This is because I spent a long time writing it and thought it would be the easiest and best way to allow those who want to give back or those who would prefer a paper copy to get it. The source for this book is available on github, and pull requests are welcome. Once there is more than just me contributing I will add a contributors page.
