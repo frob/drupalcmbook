@@ -12,7 +12,7 @@ These are the commands that allow drush to interact with the configuration manag
 
 ## config-edit
 
-Open a config file in a text editor. Edits are imported into active configration after closing editor.
+Open a config file in a text editor. Edits are imported into active configuration after closing editor.
 
 ```
 Examples:
