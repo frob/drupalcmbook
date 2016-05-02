@@ -40,7 +40,8 @@
   - config_readonly
   - config_sync
   -
-- 07 Drush
+- 07 Comand line tools
+  - Drush
   - DrupalConsole
 - 08 Features
 - 09 Multilingual
