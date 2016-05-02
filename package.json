@@ -5,7 +5,7 @@
   "main": "build/html/index.html",
   "scripts": {
     "build": "npm run build-html",
-    "build-html": "pandoc -o build/html/index.html pages/*; pandoc -o build/html/apendix.html apendix/*",
+    "build-html": "pandoc --toc -s --highlight-style pygments -c ../../node_modules/material-design-lite/material.min.css -o build/html/index.html pages/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/frob/cmibook/issues"
   },
-  "homepage": "https://github.com/frob/cmibook#readme"
+  "homepage": "https://github.com/frob/cmibook#readme",
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
+  }
 }
