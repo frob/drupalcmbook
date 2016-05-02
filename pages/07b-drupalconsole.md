@@ -19,25 +19,114 @@ DrupalConsole is a new command line tool built with [S] components.
 
 Show the current configuration.
 
+*Usage:*
+
+```bash
+$ drupal config:debug [arguments]
+$ cde
+```
+
+*Available arguments*
+
+config-name
+: Configuration name.
+
 ## config:delete
 
 Delete configuration
+
+*Usage:*
+
+```bash
+$ drupal config:delete [arguments]
+```
+
+*Available arguments*
+
+name
+: Configuration name.
 
 ## config:diff
 
 Output configuration items that are different in active configuration compared with a directory.
 
+*Usage:*
+
+```bash
+$ drupal config:diff [arguments] [options]
+```
+
+*Available options*
+
+--reverse
+: See the changes in reverse (i.e diff a directory to the active configuration).
+
+*Available arguments*
+
+directory
+: The directory to diff against. If omitted, choose from Drupal config directories.
+
 ## config:edit
 
 Edit the selected configuration.
+
+*Usage:*
+
+```bash
+$ drupal config:edit [arguments]
+$ cdit
+```
+
+*Available arguments*
+
+config-name
+: Configuration name.
+
+editor
+: Editor.
 
 ## config:export
 
 Export current application configuration.
 
+*Usage:*
+
+```bash
+$ drupal config:export [options]
+$ ce
+```
+
+*Available options*
+
+--directory
+: Define the export directory to save the configuration output.
+
+--tar
+: If set, the configuration will be exported to an archive file.
+
 ## config:export:content:type
 
 Export a specific content type and their fields.
+
+*Usage:*
+
+```bash
+$ drupal config:export:content:type [arguments] [options]
+$ cect
+```
+
+*Available options*
+
+--module
+: The Module name.
+
+--optional-config
+: Export content type as an optional YAML configuration in your module
+
+*Available arguments*
+
+content-type
+: Content Type to be exported
 
 ## config:export:single
 
