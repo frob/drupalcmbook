@@ -128,7 +128,7 @@ $config = \Drupal::config('node.type.article.dependencies');
 $config->get('modules');
 ```
 
-### File structure & Subcategories
+### Install and Schemas
 
 A module can define its default values for configuration inside ```config/install``` and ```config/schema``` in the module's directory. The *install* directory holds configuration management files that will be imported upon installation of the module. The *schema* directory holds configuration object definitions. This is used when a modules might not want to import configuration when it is installed. If you take a look at that node type configuration file for the _Article_ content type definition, you will see a uuid. If we look at the schema file ```core/modules/node/config/schema/node.schema.yml``` for node types:
 
@@ -170,7 +170,7 @@ node.type.*:
 
 > There is more to a node than a node type. I have condensed this configuration schema to only include the node type schema and the node settings schema.
 
-If we look at the keys in the config entity for the _Article_ content type and compare it to the keys in the mapping we will see that they are all present in the schema.
+If we look at the keys in the config entity for the _Article_ content type and compare it to the keys in the mapping for _node.type.*_ we will see that they are all present in the schema.
 
 - name: Article
 - type: article
@@ -183,6 +183,20 @@ If we look at the keys in the config entity for the _Article_ content type and c
 There are a few fields in the config entity that are not in the schema: _uuid_,  _langcode_, _status_, _dependencies_, and _third_party_settings_. These are config entity properties, they are used mostly internally to manage the mechanical work of importing, exporting, or managing the configuration entities.
 
 @TODO find out about these: status, dependencies and third_party_settings.
+
+Another thing to notice about the contents of ```core/modules/node/config/schema/node.schema.yml``` is that there are two configuration schemas being defined here (there are more, but I condensed it to use it as an example). There are two things being defined above, the node type schema and the node settings schema. Aside from the type of schemas they are very similar and only hold: _type_, _label_, and _mappings_ for the node module.
+
+@TODO find out what all this is.
+<dl>
+<dt>type</dt>
+<dd></dd>
+<dt>label</dt>
+<dd></dd>
+<dt>mapping</dt>
+<dd>These tell Drupal what data to expect for a field.</dd>
+</dl>
+
+### File structure & Subcategories
 
 Active configuration is stored in a flat file structure in the ```sites/default/files/config_HASH/sync``` directory. Subcategories are organized into files by the name of the file and the hierarchy of the yaml in the file. For example; configuration files that have the pattern ```system.*.yml``` are a part of the system namespace. If we look at these files:
 
@@ -243,6 +257,8 @@ maintenance:
 ```
 
 This is nice right? All our configuration is in one place. We can just edit this file and import the changes. There is a problem with that idea however, if we do this then any little change to completely unrelated systems would cause this entire file to need to be synced. Also, all changes are meant to be made in the ui. In other words, the system is designed in a way that we do not make changes by hand in files. Instead we use the Drupal UI or a command line tool to edit the configuration.
+
+> I am sure you have noticed the _langcode_ property in these examples. This is the language that this configuration is set to. In [D8] it is possible to have different configuration for different languages. I will cove that in more detail in chapter 9.
 
 ## What does Drupal do with yaml files
 
